@@ -39,14 +39,6 @@ print(category_totals.max())
 
 print("\nGrafik oluşturuluyor...")
 
-category_totals.plot(kind="bar")
-
-plt.title("Kategoriye Gore Toplam Harcama")
-plt.xlabel("Kategori")
-plt.ylabel("Toplam Tutar")
-
-plt.savefig("chart.png")
-
 plt.figure(figsize=(10, 6))
 
 category_totals.plot(
@@ -89,7 +81,7 @@ monthly_plot.index = monthly_plot.index.astype(str)
 
 plt.figure(figsize=(10, 6))
 
-ax = monthly_plot.plot(kind="line", marker="o", linewidth=2)
+monthly_plot.plot(kind="line", marker="o", linewidth=2)
 
 plt.title("Aylık Harcama (Kategoriye Göre)", fontsize=14, fontweight="bold")
 plt.xlabel("Ay", fontsize=12)
