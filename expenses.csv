@@ -1,0 +1,9 @@
+date,category,amount,payment_method,description
+2026-03-01,Groceries,450,Card,Migros
+2026-03-02,Transport,80,Cash,Metro
+2026-03-03,Bills,1200,Card,Internet
+2026-03-04,Groceries,300,Card,Carrefour
+2026-03-05,Entertainment,200,Card,Netflix
+2026-03-06,Transport,60,Cash,Bus
+2026-03-07,Bills,900,Card,Electricity
+2026-03-08,Groceries,500,Card,A101
