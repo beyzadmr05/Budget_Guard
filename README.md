@@ -4,12 +4,14 @@ Budget Guard is a simple Python project that analyzes personal expenses using da
 
 ## 📊 Features
 
-- Reads expense data from CSV file
+- Reads expense data from a CSV file (including dates for time-based views)
+- Prints **monthly spending summary**: total per month and breakdown by category
 - Calculates total spending by category
-- Identifies highest spending category
+- Identifies the highest spending category
 - Generates visual insights:
-  - Bar Chart (Total Spending by Category)
-  - Pie Chart (Spending Distribution)
+  - Bar chart (total spending by category) → `chart.png`
+  - Pie chart (spending distribution) → `pie_chart.png`
+  - Line chart (monthly spending by category) → `monthly_line.png`
 
 ## 🛠️ Technologies Used
 
@@ -25,15 +27,22 @@ budget_guard/
 ├── expenses.csv
 ├── chart.png
 ├── pie_chart.png
+├── monthly_line.png
 └── README.md
 
 ## 📈 Sample Outputs
 
 ### Bar Chart
+
 ![Bar Chart](chart.png)
 
 ### Pie Chart
+
 ![Pie Chart](pie_chart.png)
+
+### Monthly Line Chart
+
+![Monthly Line Chart](monthly_line.png)
 
 ## 📌 Insights
 
@@ -46,3 +55,6 @@ budget_guard/
 ```bash
 pip3 install pandas matplotlib
 python3 app.py
+```
+
+Running the script prints summaries to the terminal and writes the chart images above into the project folder.
